@@ -19,7 +19,7 @@
 
 <h3>please enter your name :)</h3>
 <input bind:value={name}>
-<h1 on:blur={helloThere}>{message}</h1>
+<h1 on:click={helloThere}>{message}</h1>
 {#each todos as todo, index}
 <input bind:value={todos[index]}>
 <button on:click={removeTodo}>X</button>
