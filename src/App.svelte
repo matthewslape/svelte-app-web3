@@ -17,12 +17,12 @@
 
 </script>
 
-<h3>please enter your name :)</h3>
-<input bind:value={n}>
-<h1 on:click={helloThere}>Hello, {n}</h1>
+<h1 on:click={helloThere}>Hello, <span style="color: #063c81">{n}</span></h1>
+<input style="background: black; color: white;"bind:value={n}>
+<br>
 {#each todos as todo, index}
 <input bind:value={todos[index]}>
 <button on:click={()=>removeTodo(index)}>X</button>
 <br>
 {/each}
-<button on:click={addTodo}>Add Todo</button>
+<button on:click={addTodo}>Add Something</button>
