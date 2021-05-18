@@ -1,10 +1,10 @@
 <script>
 	let name;
-	let message;
+	let n = "Person?";
 	let todos = [];
 
 	function helloThere(name){
-		message = `Hello, ${name}!`;
+		n = name;
 	}
 
 	function removeTodo(index){
@@ -18,8 +18,8 @@
 </script>
 
 <h3>please enter your name :)</h3>
-<input bind:value={name}>
-<h1 on:click={helloThere}>{message}</h1>
+<input bind:value={n}>
+<h1 on:click={helloThere}>Hello, {n}!</h1>
 {#each todos as todo, index}
 <input bind:value={todos[index]}>
 <button on:click={removeTodo}>X</button>
