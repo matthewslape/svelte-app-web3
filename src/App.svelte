@@ -8,7 +8,7 @@
 	}
 
 	function removeTodo(index){
-		todos = [...todos.slice(0, index), ...todos.slice(0, index + 1)];
+		todos = [...todos.slice(0, index), ...todos.slice(index + 1)];
 	}
 
 	function addTodo(){
