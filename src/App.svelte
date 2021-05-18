@@ -2,7 +2,7 @@
 	let name = 'Matthew';
 	let todos = [];
 
-	function removeTodo(){
+	function removeTodo(index){
 		todos = [...todos.slice(0, index), ...todos.slice(0, index + 1)];
 	}
 
